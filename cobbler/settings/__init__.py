@@ -180,6 +180,7 @@ class Settings:
         self.http_port = 80
         self.iso_template_dir = "/etc/cobbler/iso"
         self.jinja2_includedir = "/var/lib/cobbler/jinja2"
+        self.jinja2_extensions: List[str] = []
         self.kernel_options: Dict[str, Any] = {}
         self.ldap_anonymous_bind = True
         self.ldap_base_dn = "DC=devel,DC=redhat,DC=com"

@@ -1,5 +1,5 @@
 """
-Migration from V3.3.1 to V3.3.2
+Migration from V3.3.3 to V3.4.0
 """
 
 # SPDX-License-Identifier: GPL-2.0-or-later
@@ -76,6 +76,7 @@ schema = Schema(
         Optional("http_port"): int,
         Optional("iso_template_dir"): str,
         Optional("jinja2_includedir"): str,
+        Optional("jinja2_extensions"): [str],
         Optional("kernel_options"): dict,
         Optional("ldap_anonymous_bind"): bool,
         Optional("ldap_base_dn"): str,
